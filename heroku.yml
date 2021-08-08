@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: ./API/Dockerfile
+run:
+  web: dotnet run
