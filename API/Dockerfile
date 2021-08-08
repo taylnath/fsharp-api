@@ -5,6 +5,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
+RUN ls
 COPY ["API/API.csproj", "API/"]
 COPY ["ClassLibrary1/ClassLibrary1.csproj", "ClassLibrary1/"]
 RUN dotnet restore "API/API.csproj"
