@@ -7,7 +7,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 RUN echo $(ls)
 COPY ["API/API.csproj", "API/"]
-COPY ["ClassLibrary1/ClassLibrary1.csproj", "ClassLibrary1/"]
+COPY ["ClassLibrary1/ClassLibrary1.fsproj", "ClassLibrary1/"]
 RUN dotnet restore "API/API.csproj"
 COPY . .
 WORKDIR "/src/API"

@@ -4,4 +4,4 @@ module Say =
     let hello name =
         printfn "Hello %s" name
         
-    let greeting = "hello"
+    let greeting = "hello from F#"
