@@ -23,6 +23,5 @@ jobs:
         docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
         docker tag taylnath/super-cool-fsharp-api registry.heroku.com/super-cool-fsharp-api/web
         docker push registry.heroku.com/super-cool-fsharp-api/web
-        heroku container:push web -a $APP_NAME
-        heroku container:release web -a $APP_NAME
+ 
        
