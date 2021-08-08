@@ -3,5 +3,10 @@
     {
       "url": "http://github.com/heroku/dotnet-buildpack"
     }
-  ]
+  ],
+  "env":
+    {
+      "PROJECT_FILE": "API/API.csproj",
+      "PROJECT_NAME": "API"
+    }
 }
