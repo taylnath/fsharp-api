@@ -24,6 +24,7 @@ namespace WebApplication2.Controllers
             _logger = logger;
         }
 
+        [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet("Weather")]
         public IEnumerable<WeatherForecast> Get()
         {
@@ -40,7 +41,13 @@ namespace WebApplication2.Controllers
         [HttpGet("Hello")]
         public string Greet()
         {
-            return Say.greeting;
+            return Library.greeting;
+        }
+
+        [HttpGet("pizza")]
+        public string GetPizza()
+        {
+            return Library.getPizza();
         }
     }
 }
