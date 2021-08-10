@@ -9,7 +9,7 @@
             "cheese"
             "pepperoni"
             "supreme"
-            "barbeque Chicken"
+            "barbecue Chicken"
             "mushroom"
             "buffalo Chicken"
             "margherita"
